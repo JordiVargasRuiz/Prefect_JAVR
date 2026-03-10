@@ -33,7 +33,8 @@ Este repositorio contiene ejemplos sencillos de procesos **Extract‑Transform�
 1. **Extract**: consulta la API de quejas de consumidores de la CFPB con parámetro `size=10`.
 2. **Transform**: extrae campos relevantes (`date_recieved`, `state`, `product`, etc.).
 3. **Load**: crea la tabla `complaint` en `cfpbcomplaints.db` y vuelca los datos.
-
+<img width="991" height="173" alt="image" src="https://github.com/user-attachments/assets/6a00e69c-5e6d-4571-b337-6121b9e13495" />
+<img width="1277" height="649" alt="image" src="https://github.com/user-attachments/assets/c6d6a027-4178-4cd0-a4e7-73e7fb14461f" />
 
 
 Ambos scripts definen flujos de Prefect (`Flow`) que se ejecutan directamente al invocarlos como programas (`python script.py`).
@@ -52,7 +53,9 @@ Cada ejecución crea (o actualiza) el fichero SQLite correspondiente en el direc
 ## 📦 Salidas
 
 - `cypress_data.db` – contiene la tabla `posts`.
+<img width="858" height="524" alt="image" src="https://github.com/user-attachments/assets/79aa5224-98ed-43e4-a0ec-49554022e9b8" />
 - `cfpbcomplaints.db` – contiene la tabla `complaint`.
+<img width="1277" height="649" alt="image" src="https://github.com/user-attachments/assets/c6d6a027-4178-4cd0-a4e7-73e7fb14461f" />
 
 Puedes inspeccionarlos con cualquier cliente SQLite (`sqlite3`, DB Browser for SQLite, etc.).
 
