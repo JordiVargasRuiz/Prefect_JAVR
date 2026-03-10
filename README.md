@@ -25,12 +25,16 @@ Este repositorio contiene ejemplos sencillos de procesos **Extract‑Transform�
 1. **Extract**: recupera posts desde `https://jsonplaceholder.cypress.io/posts`.
 2. **Transform**: filtra los 15 primeros y normaliza los campos (`userId`, `id`, `title`).
 3. **Load**: crea/actualiza la tabla `posts` en `cypress_data.db` y almacena los registros.
+<img width="993" height="192" alt="image" src="https://github.com/user-attachments/assets/ddcb5048-b27f-4a7b-b9a3-bf974948d4cc" />
+<img width="858" height="524" alt="image" src="https://github.com/user-attachments/assets/79aa5224-98ed-43e4-a0ec-49554022e9b8" />
 
 ### `pydata_denver.py`
 
 1. **Extract**: consulta la API de quejas de consumidores de la CFPB con parámetro `size=10`.
 2. **Transform**: extrae campos relevantes (`date_recieved`, `state`, `product`, etc.).
 3. **Load**: crea la tabla `complaint` en `cfpbcomplaints.db` y vuelca los datos.
+
+
 
 Ambos scripts definen flujos de Prefect (`Flow`) que se ejecutan directamente al invocarlos como programas (`python script.py`).
 
